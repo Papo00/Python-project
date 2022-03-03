@@ -18,5 +18,29 @@ time.sleep(0.3)
 client.put_pixels(leds)
 client.put_pixels(leds)
 
-
-
+for led in range(0,60):
+    leds[led] = (90,200,150)
+    time.sleep(.1)
+    client.put_pixels(leds)
+for led in range(60,120):
+    leds[led] = (255,0,0)
+    time.sleep(.1)
+    client.put_pixels(leds)
+for led in range(120,180):
+    leds[led] = (0,255,0)
+    time.sleep(.1)
+    client.put_pixels(leds)
+for led in range(180,240):
+    leds[led] = (0,0,255)
+    time.sleep(.1)
+    client.put_pixels(leds)
+for led in range(240,300):
+    leds[led] = (245,0,222)
+    time.sleep(.1)
+    client.put_pixels(leds)
+for led in range(300,360):
+    leds[led] = (235,235,35)
+    time.sleep(.1)
+    client.put_pixels(leds)
+    
+    
